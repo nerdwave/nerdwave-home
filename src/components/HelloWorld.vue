@@ -2,7 +2,7 @@
 import { computed, ref } from "vue";
 
 const minRandom = 0;
-const maxRandom = 420;
+const maxRandom = 1500;
 const magicOffset = 69;
 const randomNumber = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -11,7 +11,15 @@ const countMagicNumber = magicOffset + randomNumber(minRandom, maxRandom);
 
 const count = ref(0);
 const isMagic = computed(() => count.value >= countMagicNumber);
-const brdsz = computed(() => 0.9 + (6 * count.value) / countMagicNumber + "em");
+const brdsz = computed(
+  () =>
+    0.9 + (2 * count.value) / countMagicNumber + (count.value % 10) * 0.9 + "em"
+);
+const pixelborder = computed(() => {
+  const padding = [0.6, 1.2];
+  const step = Math.floor(count.value / 10);
+  return padding.map((p) => p * 16 + step * p + "px").join(" ");
+});
 const reset = () => (count.value = 0);
 </script>
 
@@ -38,6 +46,7 @@ const reset = () => (count.value = 0);
 <style scoped>
 .btn {
   box-shadow: 0 0 v-bind("brdsz") #b038ff77;
+  padding: v-bind("pixelborder");
   will-change: filter;
   transition: filter 300ms;
 }
