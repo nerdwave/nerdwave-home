@@ -4,7 +4,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template>
   <div>
-    <a href="https://nerdwave.io/" target="_blank">
+    <a href="https://nerdwave.io/" target="_self">
       <img src="./assets/nerdwave-text.svg" class="logo" alt="Nerdwave logo" />
     </a>
   </div>
