@@ -40,7 +40,7 @@ const reset = () => (count.value = 0);
       @click="reset"
     />
   </div>
-  <p class="shmol">I'm not responsible for any repeated strain injuries</p>
+  <p class="shmol">I'm not responsible for any repetitive strain injuries</p>
 </template>
 
 <style scoped>
