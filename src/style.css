@@ -5,7 +5,7 @@
 
   color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #20242a;
+  background-color: #171b22;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,16 +42,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #181b1f;
+  background-color: #161b25;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.3s;
 }
 button:hover {
   border-color: #b038ff;
 }
 button:focus,
 button:focus-visible {
-  outline: 1px auto -webkit-focus-ring-color;
+  outline: 1px solid rgba(255, 255, 255, 0.87);
 }
 
 .card {

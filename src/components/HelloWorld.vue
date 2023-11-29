@@ -29,6 +29,8 @@ const reset = () => (count.value = 0);
       count is {{ count }}
     </button>
     <p v-if="!isMagic">
+      This website is still under construction. While you're waiting, you can
+      play a little game.<br />
       Click the button, I dare you. Who knows what happens when it reaches a
       magic number...
     </p>
