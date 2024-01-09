@@ -13,7 +13,7 @@ const titleText = computed(() => {
 });
 useTitle(titleText);
 </script>
-
+ 
 <template>
   <div class="background">
     <router-view v-slot="{ Component }">

@@ -116,7 +116,7 @@ p {
 
 h1 {
   filter: drop-shadow(
-     0 0 0.4rem rgb(from var(--primary-alt-color) r g b / 70%) 
+     0 0 0.4rem rgb(from var(--primary-alt-color) r g b / 70%)
   );
   font-size: 64px;
 }
@@ -124,10 +124,10 @@ h2 {
   font-size: 36px;
 }
 p {
-  filter: drop-shadow(0 0 0.3rem rgb(from var(--primary-color) r g b / 60%));
+  /* filter: drop-shadow(0 0 0.3rem rgb(from var(--primary-color) r g b / 60%)); */
 }
 i {
-  filter: drop-shadow(0 0 0.3rem rgb(from var(--secondary-color) r g b / 60%));
+  /* filter: drop-shadow(0 0 0.3rem rgb(from var(--secondary-color) r g b / 60%)); */
 }
 
 .unselectable {
